@@ -2,7 +2,6 @@ package Cards;
 
 /**
  * Deck interface for Five-Card Poker.
- *
  * @author Riista
  */
 public interface Deck {
@@ -27,9 +26,7 @@ public interface Deck {
 
     /**
      * method which draws a card
-     *
      * @return a card object
      */
     Card draw();
-
 }
