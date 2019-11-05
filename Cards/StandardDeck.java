@@ -5,8 +5,6 @@ import java.util.Collections;
 
 /**
  * StandardDeck class for Five-Card poker, implements Deck interface
- *
- * @author Robert Scott - 2018
  */
 public final class StandardDeck implements Deck {
 
@@ -42,7 +40,6 @@ public final class StandardDeck implements Deck {
 
     /**
      * method which returns the current deck size
-     *
      * @return the deck size
      */
     public int getDeckSize() {
@@ -51,7 +48,6 @@ public final class StandardDeck implements Deck {
 
     /**
      * method which draws a card from the deck if deck is not empty
-     *
      * @throws IllegalArgumentException if deck is empty
      * @return the top card from the deck
      */
@@ -61,5 +57,4 @@ public final class StandardDeck implements Deck {
         }
         return theDeck.remove(0);
     }
-
 }
