@@ -5,8 +5,6 @@ import Cards.StandardDeck;
 
 /**
  * Dealer class for Five-Card Poker
- *
- * @author Robert Scott - 2018
  */
 public class Dealer {
 
@@ -28,7 +26,6 @@ public class Dealer {
 
     /**
      * method to deal a hand to a given player
-     *
      * @param p - the player to deal to
      */
     public void dealHand(PokerPlayer p) {
@@ -39,16 +36,11 @@ public class Dealer {
 
     /**
      * method to redraw cards to a player's hand after discarding
-     *
      * @param p - the player to work with
      * @param ba - boolean array to determine which of the hand to redraw
      */
     public void redrawCard(PokerPlayer p, boolean[] ba) {
         int i = 0;
-        /**
-         * it was interesting in the provided UML to see a bool array used here.
-         * I wouldn't have done it personally but it makes sense
-         */
         for (boolean b : ba) {
             if (b) { // if true, work on that card
                 p.getHand().discardCard(i); // discard that card
